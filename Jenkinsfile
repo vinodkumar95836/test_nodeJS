@@ -6,19 +6,19 @@ pipeline {
    
      stage('Install Dependencies') { 
         steps { 
-           bat 'java --version' 
+           bat 'docker --version' 
         }
      }
      
      stage('Test') { 
         steps { 
-           bat 'echo "testing application..."'
+           bat 'java --version'
         }
       }
 
          stage("Deploy application") { 
          steps { 
-           bat 'echo "deploying application..."'
+           bat 'echo "deploying application..."
          }
 
      }
